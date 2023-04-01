@@ -1,0 +1,6 @@
+framework module HGSwiftKit {
+  umbrella header "HGSwiftKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

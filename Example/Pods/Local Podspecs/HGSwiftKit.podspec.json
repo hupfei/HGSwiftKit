@@ -1,0 +1,31 @@
+{
+  "name": "HGSwiftKit",
+  "version": "0.1.0",
+  "summary": "A short description of HGSwiftKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/hupfei/HGSwiftKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "hupfei": "HG_hupfei@163.com"
+  },
+  "source": {
+    "git": "https://github.com/hupfei/HGSwiftKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "requires_arc": true,
+  "dependencies": {
+    "SwifterSwift": [
+
+    ],
+    "SnapKit": [
+
+    ]
+  },
+  "source_files": "HGSwiftKit/Classes/**/*"
+}
