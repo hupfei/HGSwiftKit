@@ -8,11 +8,11 @@
 
 import Foundation
 
-class HGCountdown {
+public class HGCountdown {
     
-    typealias TimeChangedBlock = (Int) -> Void
+    public typealias TimeChangedBlock = (Int) -> Void
         
-    static let shard = HGCountdown()
+    public static let shard = HGCountdown()
 
     /// key: identifier, value: remainingTime
     private var remainingTimes: [String: Int] = [:]
@@ -22,7 +22,7 @@ class HGCountdown {
     /// 开启定时器
     /// - Parameters:
     ///   - identifier: 定时器唯一标识符
-    func startTimer(identifier: String,
+    public func startTimer(identifier: String,
                     duration: Int = 60,
                     timeChangedHandler: @escaping TimeChangedBlock) {
         if !remainingTimes.contains(where: { $0.key == identifier }) {
@@ -63,7 +63,7 @@ class HGCountdown {
         timer?.resume()
     }
     
-    func removeTimer(identifier: String) {
+    public func stopTimer(identifier: String) {
         remainingTimes.removeValue(forKey: identifier)
         closeTimerIfNedded()
     }
