@@ -13,6 +13,20 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		6B54FF9829DBC6B5008D4CCF /* HGShardTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B54FF9629DBC6B5008D4CCF /* HGShardTimer.swift */; };
+		6B54FF9929DBC6B5008D4CCF /* HGHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B54FF9729DBC6B5008D4CCF /* HGHelper.swift */; };
+		6B54FF9B29DBC6CF008D4CCF /* UIWindow+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B54FF9A29DBC6CF008D4CCF /* UIWindow+Extensions.swift */; };
+		6B54FF9D29DBC7AD008D4CCF /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B54FF9C29DBC7AD008D4CCF /* UIView+Extensions.swift */; };
+		6B54FF9F29DBC979008D4CCF /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B54FF9E29DBC979008D4CCF /* DispatchQueue+Extensions.swift */; };
+		6B54FFA129DBC999008D4CCF /* HGAutoScrollLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B54FFA029DBC998008D4CCF /* HGAutoScrollLabel.swift */; };
+		6B54FFA329DBC9DD008D4CCF /* HGTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B54FFA229DBC9DD008D4CCF /* HGTableViewCell.swift */; };
+		6B54FFA529DBD15C008D4CCF /* HGUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B54FFA429DBD15C008D4CCF /* HGUIButton.swift */; };
+		6B54FFA729DBD1BA008D4CCF /* HGUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B54FFA629DBD1BA008D4CCF /* HGUILabel.swift */; };
+		6B54FFA929DBF855008D4CCF /* HGUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B54FFA829DBF855008D4CCF /* HGUITextField.swift */; };
+		6B54FFAB29DBF89E008D4CCF /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B54FFAA29DBF89E008D4CCF /* String+Extensions.swift */; };
+		6B54FFAD29DBF963008D4CCF /* HGUITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B54FFAC29DBF963008D4CCF /* HGUITextView.swift */; };
+		6B54FFAF29DBFA02008D4CCF /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B54FFAE29DBFA02008D4CCF /* UITableView+Extensions.swift */; };
+		6B54FFB129DC1188008D4CCF /* HGBadgeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B54FFB029DC1188008D4CCF /* HGBadgeProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +39,20 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6B54FF9629DBC6B5008D4CCF /* HGShardTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGShardTimer.swift; sourceTree = "<group>"; };
+		6B54FF9729DBC6B5008D4CCF /* HGHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGHelper.swift; sourceTree = "<group>"; };
+		6B54FF9A29DBC6CF008D4CCF /* UIWindow+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extensions.swift"; sourceTree = "<group>"; };
+		6B54FF9C29DBC7AD008D4CCF /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		6B54FF9E29DBC979008D4CCF /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
+		6B54FFA029DBC998008D4CCF /* HGAutoScrollLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGAutoScrollLabel.swift; sourceTree = "<group>"; };
+		6B54FFA229DBC9DD008D4CCF /* HGTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGTableViewCell.swift; sourceTree = "<group>"; };
+		6B54FFA429DBD15C008D4CCF /* HGUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGUIButton.swift; sourceTree = "<group>"; };
+		6B54FFA629DBD1BA008D4CCF /* HGUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGUILabel.swift; sourceTree = "<group>"; };
+		6B54FFA829DBF855008D4CCF /* HGUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGUITextField.swift; sourceTree = "<group>"; };
+		6B54FFAA29DBF89E008D4CCF /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		6B54FFAC29DBF963008D4CCF /* HGUITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGUITextView.swift; sourceTree = "<group>"; };
+		6B54FFAE29DBFA02008D4CCF /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		6B54FFB029DC1188008D4CCF /* HGBadgeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGBadgeProtocol.swift; sourceTree = "<group>"; };
 		88374769598AA8919D5F6545 /* HGSwiftKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HGSwiftKit.podspec; path = ../HGSwiftKit.podspec; sourceTree = "<group>"; };
 		98566694E6FECB7F96AF769A /* Pods-HGSwiftKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGSwiftKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HGSwiftKit_Tests/Pods-HGSwiftKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A5AF9003AEF948DED93153D4 /* Pods-HGSwiftKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGSwiftKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-HGSwiftKit_Tests/Pods-HGSwiftKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -50,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
+				6B54FF9529DBC6B5008D4CCF /* HGSwiftKit */,
 				607FACD21AFB9204008FA782 /* Example for HGSwiftKit */,
 				607FACD11AFB9204008FA782 /* Products */,
 				BE9C80278E6F65DA31528F5A /* Pods */,
@@ -95,6 +124,28 @@
 				17F64679B0711529919EA9AA /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		6B54FF9529DBC6B5008D4CCF /* HGSwiftKit */ = {
+			isa = PBXGroup;
+			children = (
+				6B54FF9E29DBC979008D4CCF /* DispatchQueue+Extensions.swift */,
+				6B54FFA029DBC998008D4CCF /* HGAutoScrollLabel.swift */,
+				6B54FFB029DC1188008D4CCF /* HGBadgeProtocol.swift */,
+				6B54FF9629DBC6B5008D4CCF /* HGShardTimer.swift */,
+				6B54FF9729DBC6B5008D4CCF /* HGHelper.swift */,
+				6B54FFA229DBC9DD008D4CCF /* HGTableViewCell.swift */,
+				6B54FFA429DBD15C008D4CCF /* HGUIButton.swift */,
+				6B54FFA629DBD1BA008D4CCF /* HGUILabel.swift */,
+				6B54FFA829DBF855008D4CCF /* HGUITextField.swift */,
+				6B54FFAC29DBF963008D4CCF /* HGUITextView.swift */,
+				6B54FFAA29DBF89E008D4CCF /* String+Extensions.swift */,
+				6B54FFAE29DBFA02008D4CCF /* UITableView+Extensions.swift */,
+				6B54FF9C29DBC7AD008D4CCF /* UIView+Extensions.swift */,
+				6B54FF9A29DBC6CF008D4CCF /* UIWindow+Extensions.swift */,
+			);
+			name = HGSwiftKit;
+			path = ../HGSwiftKit;
 			sourceTree = "<group>";
 		};
 		7464355B693934A91C613BA5 /* Frameworks */ = {
@@ -240,7 +291,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B54FFAF29DBFA02008D4CCF /* UITableView+Extensions.swift in Sources */,
+				6B54FFA729DBD1BA008D4CCF /* HGUILabel.swift in Sources */,
+				6B54FFAB29DBF89E008D4CCF /* String+Extensions.swift in Sources */,
+				6B54FF9D29DBC7AD008D4CCF /* UIView+Extensions.swift in Sources */,
+				6B54FFB129DC1188008D4CCF /* HGBadgeProtocol.swift in Sources */,
+				6B54FFA129DBC999008D4CCF /* HGAutoScrollLabel.swift in Sources */,
+				6B54FF9929DBC6B5008D4CCF /* HGHelper.swift in Sources */,
+				6B54FF9F29DBC979008D4CCF /* DispatchQueue+Extensions.swift in Sources */,
+				6B54FFAD29DBF963008D4CCF /* HGUITextView.swift in Sources */,
+				6B54FFA329DBC9DD008D4CCF /* HGTableViewCell.swift in Sources */,
+				6B54FF9B29DBC6CF008D4CCF /* UIWindow+Extensions.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				6B54FFA929DBF855008D4CCF /* HGUITextField.swift in Sources */,
+				6B54FF9829DBC6B5008D4CCF /* HGShardTimer.swift in Sources */,
+				6B54FFA529DBD15C008D4CCF /* HGUIButton.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,26 +9,15 @@
 Pod::Spec.new do |s|
   s.name             = 'HGSwiftKit'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of HGSwiftKit.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.summary          = 'my swift tool'
 
   s.homepage         = 'https://github.com/hupfei/HGSwiftKit'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'hupfei' => 'HG_hupfei@163.com' }
   s.source           = { :git => 'https://github.com/hupfei/HGSwiftKit.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '12.0'
+  s.swift_versions = ['5']
 
   s.requires_arc = true
   # 依赖的第三方库
@@ -36,5 +25,5 @@ TODO: Add long description of the pod here.
   s.dependency 'SnapKit'
 
   # 文件夹里面的文件路径
-  s.source_files = 'HGSwiftKit/Classes/**/*'
+  s.source_files = 'HGSwiftKit/*.swift'
 end

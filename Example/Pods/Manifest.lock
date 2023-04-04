@@ -42,7 +42,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HGSwiftKit: ce655e58dc07a0ce4ce26b606ea7d615958a4cec
+  HGSwiftKit: 3869cab6927c8c8728b830f9cf850bac25c107c3
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
 

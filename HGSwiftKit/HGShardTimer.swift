@@ -1,18 +1,18 @@
 //
-//  HGCountdown.swift
+//  HGShardTimer.swift
 //  eycCustomerIOS
 //
-//  Created by hupengfei on 2022/3/3.
-//  Copyright © 2022 EVT. All rights reserved.
+//  Created by hupengfei on 2023/4/1.
+//  Copyright © 2023 hupfei. All rights reserved.
 //
 
 import Foundation
 
-public class HGCountdown {
+public class HGShardTimer {
     
     public typealias TimeChangedBlock = (Int) -> Void
         
-    public static let shard = HGCountdown()
+    public static let shard = HGShardTimer()
 
     /// key: identifier, value: remainingTime
     private var remainingTimes: [String: Int] = [:]
