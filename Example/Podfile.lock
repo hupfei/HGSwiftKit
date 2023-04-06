@@ -1,5 +1,5 @@
 PODS:
-  - HGSwiftKit (0.1.0):
+  - HGSwiftKit (0.1.1):
     - SnapKit
     - SwifterSwift
   - SnapKit (5.6.0)
@@ -42,7 +42,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HGSwiftKit: 3869cab6927c8c8728b830f9cf850bac25c107c3
+  HGSwiftKit: a2cc13bff8f960cee66b95b45938e95413990a28
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
 
