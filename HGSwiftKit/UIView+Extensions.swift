@@ -11,6 +11,16 @@ import SwifterSwift
 
 public extension UIView {
     
+    struct HGRectCorner {
+        static let topLeft: CACornerMask = .layerMinXMinYCorner
+        static let topRight: CACornerMask = .layerMaxXMinYCorner
+        static let bottomLeft: CACornerMask = .layerMinXMaxYCorner
+        static let bottomRight: CACornerMask = .layerMaxXMaxYCorner
+        static let top: CACornerMask = [topLeft, topRight]
+        static let bottom: CACornerMask = [bottomLeft, bottomRight]
+        static let all: CACornerMask = [topLeft, topRight, bottomLeft, bottomRight]
+    }
+    
     struct ShadowInfo {
         let shadowColor: UIColor?
         let shadowRadius: CGFloat

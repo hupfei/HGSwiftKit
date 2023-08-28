@@ -12,16 +12,16 @@ import SwifterSwift
 
 open class HGTableViewCell: UITableViewCell {
     /// cell 水平缩进
-    var horizontalInset: CGFloat { 0 }
-    var verticalInset: CGFloat { 0 }
+    open var horizontalInset: CGFloat { 0 }
+    open var verticalInset: CGFloat { 0 }
     /// 是否显示分隔线
-    var shouldShowSeparator: Bool { false }
+    open var shouldShowSeparator: Bool { false }
     /// cell 的分隔线位置
-    var cellSeparatorInsets: UIEdgeInsets { UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15) }
+    open var cellSeparatorInsets: UIEdgeInsets { UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15) }
     /// 分隔线颜色
-    var cellSeparatorColor: UIColor? { UIColor(hexString: "E9E9E9") }
+    open var cellSeparatorColor: UIColor? { UIColor(hexString: "E9E9E9") }
     
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+    public override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         didInitialize()
     }
@@ -43,7 +43,7 @@ open class HGTableViewCell: UITableViewCell {
         }
     }
     
-    func didInitialize() {
+    open func didInitialize() {
         accessoryType = .none
         backgroundColor = .white
         
@@ -53,7 +53,7 @@ open class HGTableViewCell: UITableViewCell {
         }
     }
     
-    public override func layoutSubviews() {
+    open override func layoutSubviews() {
         super.layoutSubviews()
         
         if shouldShowSeparator, let indexPath = cellIndexPath {

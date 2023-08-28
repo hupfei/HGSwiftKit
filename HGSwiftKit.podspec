@@ -8,13 +8,13 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HGSwiftKit'
-  s.version          = '0.1.1'
+  s.version          = '1.0.0'
   s.summary          = 'my swift tool'
 
-  s.homepage         = 'https://github.com/hupfei/HGSwiftKit'
+  s.homepage         = 'https://hg_hupfei.coding.net/p/HGSwiftKit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'hupfei' => 'HG_hupfei@163.com' }
-  s.source           = { :git => 'https://github.com/hupfei/HGSwiftKit.git', :tag => s.version.to_s }
+  s.author           = { 'hupfei' => '573586346@qq.com' }
+  s.source           = { :git => 'https://hg_hupfei.coding.net/p/HGSwiftKit.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '12.0'
   s.swift_versions = ['5']

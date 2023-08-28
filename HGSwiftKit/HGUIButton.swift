@@ -10,28 +10,28 @@ import Foundation
 import UIKit
 import SwifterSwift
 
-enum HGUIButtonImagePosition: Int {
+public enum HGUIButtonImagePosition: Int {
     case top = 0
     case left
     case bottom
     case right
 }
 
-public class HGUIButton: UIButton {
+open class HGUIButton: UIButton {
     /// 按钮里图标和文字的相对位置
-    var imagePosition: HGUIButtonImagePosition = .left {
+    public var imagePosition: HGUIButtonImagePosition = .left {
         didSet {
             self.setNeedsLayout()
         }
     }
     /// 按钮里图标和文字之间的间隔
-    var spacingBetweenImageAndTitle: CGFloat = 5 {
+    public var spacingBetweenImageAndTitle: CGFloat = 5 {
         didSet {
             self.setNeedsLayout()
         }
     }
     /// 圆角（cornerRadiusAdjustsBounds为 true 则设置无效）
-    var buttonCornerRadius: CGFloat = 0 {
+    public var buttonCornerRadius: CGFloat = 0 {
         didSet {
             if (!cornerRadiusAdjustsBounds) {
                 layer.cornerRadius = buttonCornerRadius
@@ -40,23 +40,23 @@ public class HGUIButton: UIButton {
         }
     }
     /// 圆角保持为高度的 1/2
-    var cornerRadiusAdjustsBounds: Bool = false
+    public var cornerRadiusAdjustsBounds: Bool = false
     
     ///背景渐变色背景
     private var gradientLayer: CAGradientLayer?
     
     /// 按钮点击时的背景色
-    var highlightedBackgroundColor: UIColor?
+    public var highlightedBackgroundColor: UIColor?
     
     private var highlightedBackgroundLayer: CALayer?
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         self.contentEdgeInsets = UIEdgeInsets(top: CGFloat.leastNormalMagnitude, left: 0, bottom: CGFloat.leastNormalMagnitude, right: 0)
         didInitialize()
     }
         
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         super.init(coder: coder)
         didInitialize()
     }
@@ -69,7 +69,7 @@ public class HGUIButton: UIButton {
     /// 快速创建一个圆角 button
     /// - Parameters:
     ///   - cornerRadiusAdjustsBounds: true-圆角为高度1/2
-    init(withFillColor fillColor: UIColor?, titleColor: UIColor?, title: String? = nil, cornerRadiusAdjustsBounds: Bool = true) {
+    public init(withFillColor fillColor: UIColor?, titleColor: UIColor?, title: String? = nil, cornerRadiusAdjustsBounds: Bool = true) {
         super.init(frame: .zero)
         
         self.cornerRadiusAdjustsBounds = cornerRadiusAdjustsBounds
@@ -402,7 +402,7 @@ public class HGUIButton: UIButton {
         }
     }
     
-    func addgradientLayer(colors: [UIColor] = [UIColor(hexString: "#369EFF")!,
+    public func addgradientLayer(colors: [UIColor] = [UIColor(hexString: "#369EFF")!,
                                                UIColor(hexString: "#1C86FF")!,
                                                UIColor(hexString: "#006DFF")!],
                           startPoint: CGPoint = CGPoint(x: 0, y: 0),

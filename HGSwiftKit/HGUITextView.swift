@@ -8,20 +8,20 @@
 
 import UIKit
 
-public class HGUITextView: UITextView, UITextViewDelegate {
+open class HGUITextView: UITextView, UITextViewDelegate {
     ///允许输入的最大文字长度
-    var maximumTextLength: Int?
+    public var maximumTextLength: Int?
     ///是否按照中文 2 个字符、英文 1 个字符的方式来计算文本长度
     ///默认为 NO
-    var shouldCountingNonASCIICharacterAsTwo: Bool = false
+    public var shouldCountingNonASCIICharacterAsTwo: Bool = false
     ///placeholder文字
-    var placeholder: String? {
+    public var placeholder: String? {
         didSet {
             placeholderLabel.text = placeholder
         }
     }
     ///placeholder颜色
-    var placeholderColor: UIColor? = UIColor(hexString: "#999999") {
+    public var placeholderColor: UIColor? = UIColor(hexString: "#999999") {
         didSet {
             placeholderLabel.textColor = placeholderColor
         }
@@ -67,12 +67,12 @@ public class HGUITextView: UITextView, UITextViewDelegate {
         }
     }
     
-    override init(frame: CGRect, textContainer: NSTextContainer?) {
+    public override init(frame: CGRect, textContainer: NSTextContainer?) {
         super.init(frame: frame, textContainer: textContainer)
         commonInit()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()
     }

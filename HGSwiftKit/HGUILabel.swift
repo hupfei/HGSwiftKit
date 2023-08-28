@@ -9,25 +9,25 @@
 import Foundation
 import UIKit
 
-public class HGUILabel: UILabel {
+open class HGUILabel: UILabel {
     /// 圆角保持为高度的 1/2
-    var cornerRadiusAdjustsBounds = false
+    public var cornerRadiusAdjustsBounds = false
     
     /// 控制label内容的padding
-    var contentEdgeInsets: UIEdgeInsets = .zero {
+    public var contentEdgeInsets: UIEdgeInsets = .zero {
         didSet {
             setNeedsDisplay()
         }
     }
     
-    struct LabelTailViewConfig {
+    public struct LabelTailViewConfig {
         let tailViewText: String = "展开"
         let tailViewTextColor: UIColor? = UIColor(hexString: "349DFF")
         let tailViewClickedBlock: (() -> Void)?
     }
 
     ///在 label 的末尾显示一个 展开/更多 的 按钮
-    var tailViewConfig: LabelTailViewConfig? {
+    public var tailViewConfig: LabelTailViewConfig? {
         didSet {
             if tailView.superview == nil {
                 isUserInteractionEnabled = true

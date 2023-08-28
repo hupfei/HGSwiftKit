@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public class HGAutoScrollLabel: UILabel {
+open class HGAutoScrollLabel: UILabel {
     /// 滚动速度
     private var speed: CGFloat = 0.5
     /// 重复文字间的间距
@@ -29,16 +29,16 @@ public class HGAutoScrollLabel: UILabel {
         self.clipsToBounds = true
     }
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         super.init(coder: coder)
     }
     
-    init(frame: CGRect, speed: CGFloat = 0.5) {
+    public init(frame: CGRect, speed: CGFloat = 0.5) {
         super.init(frame: frame)
         self.speed = speed
     }
     
-    convenience init(speed: CGFloat) {
+    public convenience init(speed: CGFloat) {
         self.init(frame: .zero, speed: speed)
     }
     

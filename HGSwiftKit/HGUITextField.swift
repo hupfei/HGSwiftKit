@@ -8,29 +8,29 @@
 
 import UIKit
 
-public class HGUITextField: UITextField, UITextFieldDelegate {
+open class HGUITextField: UITextField, UITextFieldDelegate {
     ///修改 placeholder 的颜色
-    var placeholderColor: UIColor? = UIColor(hexString: "C4C8D0") {
+    public var placeholderColor: UIColor? = UIColor(hexString: "C4C8D0") {
         didSet {
             updateAttributedPlaceholderIfNeeded()
         }
     }
     ///文字在输入框内的 padding
-    var textInsets: UIEdgeInsets = UIEdgeInsets(top: 0, left: 7, bottom: 0, right: 7)
+    public var textInsets: UIEdgeInsets = UIEdgeInsets(top: 0, left: 7, bottom: 0, right: 7)
     ///clearButton 在默认位置上的偏移
-    var clearButtonPositionAdjustment: UIOffset = .zero
+    public var clearButtonPositionAdjustment: UIOffset = .zero
     ///允许输入的最大文字长度
-    var maximumTextLength: Int?
+    public var maximumTextLength: Int?
     ///是否按照中文 2 个字符、英文 1 个字符的方式来计算文本长度
     ///默认为 NO
-    var shouldCountingNonASCIICharacterAsTwo: Bool = false
+    public var shouldCountingNonASCIICharacterAsTwo: Bool = false
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         didInitialize()
     }
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         super.init(coder: coder)
         didInitialize()
     }
