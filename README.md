@@ -22,7 +22,7 @@ pod 'HGSwiftKit'
 
 ## Author
 
-hupfei, 573586346@qq.com
+hupfei, HG_hupfei@163.com
 
 ## License
 

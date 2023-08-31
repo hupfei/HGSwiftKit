@@ -75,6 +75,19 @@ public extension UILabel {
         self.textColor = textColor
     }
     
+    
+    /// 设置行距
+    func textWithLineSpacing(lineSpacing: CGFloat,
+                             text: String?,
+                             font: UIFont,
+                             color: UIColor = .black) {
+        guard let _text = text else { return }
+        self.numberOfLines = 0
+        let style = NSMutableParagraphStyle()
+        style.lineSpacing = lineSpacing
+        self.attributedText = NSAttributedString(string: _text, attributes: [.paragraphStyle: style, .foregroundColor: color, .font: font])
+    }
+    
     /// 将目标 UILabel 的样式属性设置到当前 UILabel 上
     func setTheSameAppearanceAsLabel(_ label: UILabel) {
         self.font = label.font

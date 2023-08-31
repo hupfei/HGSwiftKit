@@ -445,6 +445,7 @@
 			baseConfigurationReference = CF485EED98BD5CC94256FFD8 /* Pods-HGSwiftKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_TESTABILITY = NO;
 				INFOPLIST_FILE = HGSwiftKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -452,6 +453,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hupfei.--PRODUCT-NAME-rfc1034identifier-";
 				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "com.hupfei.HGSwiftKit-Example";
@@ -470,12 +472,14 @@
 			baseConfigurationReference = C32381C0D44FAC79CBA35E99 /* Pods-HGSwiftKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = HGSwiftKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hupfei.--PRODUCT-NAME-rfc1034identifier-";
 				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "com.hupfei.HGSwiftKit-Example";
