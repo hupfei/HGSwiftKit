@@ -27,6 +27,18 @@
     ],
     "SnapKit": [
 
+    ],
+    "RxSwiftExt": [
+
+    ],
+    "NSObject+Rx": [
+
+    ],
+    "DZNEmptyDataSet": [
+
+    ],
+    "MJRefresh": [
+
     ]
   },
   "source_files": "HGSwiftKit/*.swift",

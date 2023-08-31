@@ -97,3 +97,30 @@ public extension UILabel {
         self.textAlignment = label.textAlignment
     }
 }
+
+private var kAssociatedKey_background: Void?
+extension UIStackView {
+    ///iOS14以下设置backgroundColor无效
+    var hg_backgroundColor: UIColor? {
+        set {
+            objc_setAssociatedObject(self, &kAssociatedKey_background, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            
+            guard let color = newValue else { return }
+            if #available(iOS 14.0, *) {
+                backgroundColor = color
+            } else {
+                let subView = UIView(frame: bounds)
+                subView.backgroundColor = color
+                subView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+                insertSubview(subView, at: 0)
+            }
+        }
+        get {
+            let value = objc_getAssociatedObject(self, &kAssociatedKey_background) as? UIColor
+            guard let _value = value else {
+                return nil
+            }
+            return _value
+        }
+    }
+}

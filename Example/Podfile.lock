@@ -1,7 +1,29 @@
 PODS:
+  - DZNEmptyDataSet (1.8.1)
   - HGSwiftKit (0.1.1):
+    - DZNEmptyDataSet
+    - MJRefresh
+    - "NSObject+Rx"
+    - RxSwiftExt
     - SnapKit
     - SwifterSwift
+  - MJRefresh (3.7.5)
+  - "NSObject+Rx (5.2.2)":
+    - RxSwift (~> 6.2)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - RxSwiftExt (6.0.1):
+    - RxSwiftExt/Core (= 6.0.1)
+    - RxSwiftExt/RxCocoa (= 6.0.1)
+  - RxSwiftExt/Core (6.0.1):
+    - RxSwift (~> 6.0)
+  - RxSwiftExt/RxCocoa (6.0.1):
+    - RxCocoa (~> 6.0)
+    - RxSwiftExt/Core
   - SnapKit (5.6.0)
   - SwifterSwift (5.2.0):
     - SwifterSwift/AppKit (= 5.2.0)
@@ -34,6 +56,13 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - DZNEmptyDataSet
+    - MJRefresh
+    - "NSObject+Rx"
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - RxSwiftExt
     - SnapKit
     - SwifterSwift
 
@@ -42,10 +71,17 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HGSwiftKit: a2cc13bff8f960cee66b95b45938e95413990a28
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  HGSwiftKit: af88ee0fa1da9d691d0ca5725ea685f2110c5428
+  MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
+  "NSObject+Rx": 61cf1f7306a73dcef8b36649198af0813ec18dfd
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  RxSwiftExt: d61c4b9b06e0a448041b1c659e0f1b5c5a035afc
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
 
 PODFILE CHECKSUM: f84c8f643e61ac7ccaf7dcd370953f8836795f91
 
-COCOAPODS: 1.12.0
+COCOAPODS: 1.12.1

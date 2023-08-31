@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HGSwiftKit'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'my swift tool'
 
   s.homepage         = 'https://github.com/hupfei/HGSwiftKit'
@@ -23,6 +23,10 @@ Pod::Spec.new do |s|
   # 依赖的第三方库
   s.dependency 'SwifterSwift'
   s.dependency 'SnapKit'
+  s.dependency 'RxSwiftExt'
+  s.dependency 'NSObject+Rx'
+  s.dependency 'DZNEmptyDataSet'
+  s.dependency 'MJRefresh'
 
   # 文件夹里面的文件路径
   s.source_files = 'HGSwiftKit/*.swift'
