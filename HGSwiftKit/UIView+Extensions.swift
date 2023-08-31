@@ -99,7 +99,7 @@ public extension UILabel {
 }
 
 private var kAssociatedKey_background: Void?
-extension UIStackView {
+public extension UIStackView {
     ///iOS14以下设置backgroundColor无效
     var hg_backgroundColor: UIColor? {
         set {

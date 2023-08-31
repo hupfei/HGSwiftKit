@@ -10,25 +10,25 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-class HGTableViewVM: BaseViewModel {
+open class HGTableViewVM: BaseViewModel {
     /// 页码
-    var pageNo: Int = 1
+    open var pageNo: Int = 1
     /// 每一页大小
-    var pageSize: Int { 20 }
+    open var pageSize: Int { 20 }
     /// 样式
-    var tableViewStyle: UITableView.Style { .plain }
+    open var tableViewStyle: UITableView.Style { .plain }
     /// 是否可以下拉刷新
-    var hasHeaderRefresh: Bool { false }
+    open var hasHeaderRefresh: Bool { false }
     /// 是否可以上拉加载
-    var hasFooterRefresh: Bool { false }
+    open var hasFooterRefresh: Bool { false }
     /// cell圆角值
-    var cellCornerRadius: CGFloat { 0 }
+    open var cellCornerRadius: CGFloat { 0 }
     /// 数据请求结果，成功时返回的是数据总数
-    let requestResult = BehaviorRelay<Result<Int, Error>>(value: .success(0))
+    public let requestResult = BehaviorRelay<Result<Int, Error>>(value: .success(0))
     /// 空白文字
-    var emptyTitle: String { "暂无信息" }
+    open var emptyTitle: String { "暂无信息" }
     /// 空白图片
-    var emptyImage: UIImage? { UIImage(named: "hg_empty_default") }
+    open var emptyImage: UIImage? { UIImage(named: "hg_empty_default") }
     /// viewDidLoad 后请求数据
-    var shouldRequestDataAfterViewDidLoad: Bool { true }    
+    open var shouldRequestDataAfterViewDidLoad: Bool { true }
 }

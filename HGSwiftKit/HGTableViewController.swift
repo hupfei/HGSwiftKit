@@ -14,9 +14,9 @@ import DZNEmptyDataSet
 import MJRefresh
 import UIKit
 
-class HGTableViewController: HGViewController, UITableViewDelegate, UITableViewDataSource, DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
+open class HGTableViewController: HGViewController, UITableViewDelegate, UITableViewDataSource, DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
     
-    private(set) lazy var tableView: UITableView = {
+    open private(set) lazy var tableView: UITableView = {
         let view = UITableView(frame: .zero, style: (viewModel as! HGTableViewVM).tableViewStyle)
         view.configTableView()
         view.register(cellWithClass: HGTableViewCell.self)
@@ -30,7 +30,7 @@ class HGTableViewController: HGViewController, UITableViewDelegate, UITableViewD
     let headerRefreshTrigger = PublishRelay<Void>()
     let footerRefreshTrigger = PublishRelay<Void>()
     
-    override func makeUI() {
+    open override func makeUI() {
         super.makeUI()
         
         stackView.addArrangedSubview(tableView)
@@ -71,7 +71,7 @@ class HGTableViewController: HGViewController, UITableViewDelegate, UITableViewD
         }
     }
     
-    override func bindViewModel() {
+    open override func bindViewModel() {
         super.bindViewModel()
         guard let viewModel = viewModel as? HGTableViewVM else { return }
 
@@ -117,29 +117,29 @@ class HGTableViewController: HGViewController, UITableViewDelegate, UITableViewD
     
     // MARK: - UITableViewDelegate
     
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         guard let viewModel = viewModel as? HGTableViewVM else { return }
         tableView.hg_configureCellForDisplay(cell, forRowAt: indexPath, withCornerRadius: viewModel.cellCornerRadius)
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withClass: HGTableViewCell.self, for: indexPath)
         return cell
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { 0 }
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { 0 }
     
     // MARK: - DZNEmptyDataSet
     
-    func image(forEmptyDataSet scrollView: UIScrollView!) -> UIImage! {
+    public func image(forEmptyDataSet scrollView: UIScrollView!) -> UIImage! {
         return (viewModel as! HGTableViewVM).emptyImage
     }
     
-    func title(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
+    public func title(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
         return NSAttributedString(string: (viewModel as! HGTableViewVM).emptyTitle, attributes: [.font: UIFont.systemFont(ofSize: 25), .foregroundColor: UIColor(hexString: "D5D5D5")!])
     }
     
-    func emptyDataSetShouldDisplay(_ scrollView: UIScrollView!) -> Bool {
+    public func emptyDataSetShouldDisplay(_ scrollView: UIScrollView!) -> Bool {
         switch (viewModel as! HGTableViewVM).requestResult.value {
         case .success(let count):
             return count == 0
@@ -148,11 +148,11 @@ class HGTableViewController: HGViewController, UITableViewDelegate, UITableViewD
         }
     }
     
-    func emptyDataSetShouldAllowScroll(_ scrollView: UIScrollView!) -> Bool {
+    public func emptyDataSetShouldAllowScroll(_ scrollView: UIScrollView!) -> Bool {
         return true
     }
     
-    func verticalOffset(forEmptyDataSet scrollView: UIScrollView!) -> CGFloat {
+    public func verticalOffset(forEmptyDataSet scrollView: UIScrollView!) -> CGFloat {
         return 0
     }
 }

@@ -12,17 +12,17 @@ import RxSwift
 import NSObject_Rx
 import UIKit
 
-class HGViewController: UIViewController {
+open class HGViewController: UIViewController {
     
-    var viewModel: BaseViewModel?
+    open var viewModel: BaseViewModel?
     
-    lazy var backBarButton: UIBarButtonItem = {
+    open lazy var backBarButton: UIBarButtonItem = {
         let btn = UIBarButtonItem()
         btn.title = ""
         return btn
     }()
     
-    lazy var closeBarButton: UIBarButtonItem = {
+    open lazy var closeBarButton: UIBarButtonItem = {
         let btn = UIBarButtonItem(image: UIImage(named: "hg_navigation_back"),
                                    style: .plain,
                                    target: self,
@@ -33,7 +33,7 @@ class HGViewController: UIViewController {
         return btn
     }()
     
-    lazy var stackView: UIStackView = {
+    open lazy var stackView: UIStackView = {
         let view = UIStackView(arrangedSubviews: [])
         view.spacing = 0
         view.axis = .vertical
@@ -45,42 +45,42 @@ class HGViewController: UIViewController {
         return view
     }()
     
-    init(viewModel: BaseViewModel? = BaseViewModel()) {
+    public init(viewModel: BaseViewModel? = BaseViewModel()) {
         super.init(nibName: nil, bundle: nil)
         self.viewModel = viewModel
     }
     
-    init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?, viewModel: BaseViewModel? = nil) {
+    public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?, viewModel: BaseViewModel? = nil) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         self.viewModel = viewModel
     }
     
-    required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         super.init(nibName: nil, bundle: nil)
     }
     
-    override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         
         makeUI()
         bindViewModel()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
         adjustLeftBarButtonItem()
     }
     
-    func makeUI() {
+    open func makeUI() {
         
     }
     
-    func bindViewModel() {
+    open func bindViewModel() {
         
     }
     
-    func closeBarButtonAction() {
+    open func closeBarButtonAction() {
         self.dismiss(animated: true)
     }
     
