@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HGSwiftKit'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'my swift tool'
 
   s.homepage         = 'https://github.com/hupfei/HGSwiftKit'
